@@ -50,6 +50,8 @@ public class OrdenRodaje {
         this.prevMeteo = prevMeteo;
         this.estado = estado;
     }
+    
+    
 
     public int getId() {
         return id;
