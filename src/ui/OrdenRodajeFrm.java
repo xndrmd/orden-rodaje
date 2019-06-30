@@ -5,6 +5,8 @@
  */
 package ui;
 
+import model.*;
+
 /**
  *
  * @author laboratorioesan
@@ -386,7 +388,7 @@ public class OrdenRodajeFrm extends javax.swing.JFrame {
 
     private void guardarbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarbtnActionPerformed
         // TODO add your handling code here:
-        
+        OrdenRodaje or = new OrdenRodaje();
         
         
     }//GEN-LAST:event_guardarbtnActionPerformed
