@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class OrdenRodaje {
     private int id;
-    // private Pelicula pelicula; // no tiene relacion en la bd
+    private Pelicula pelicula; // no tiene relacion en la bd
     private Empleado productor;
     private Empleado director;
     private Empleado directorProd;
@@ -33,8 +33,9 @@ public class OrdenRodaje {
     public OrdenRodaje() {
     }
 
-    public OrdenRodaje(int id, Empleado productor, Empleado director, Empleado directorProd, Hospital hospital, Ubigeo ubigeo, Date fecRodaje, Date horaInicio, Date horaFin, Date horaDesayuno, Date horaAlmuerzo, Date horaAmanecer, Date horaAtardecer, String prevMeteo, int estado) {
+    public OrdenRodaje(int id, Pelicula pelicula,Empleado productor, Empleado director, Empleado directorProd, Hospital hospital, Ubigeo ubigeo, Date fecRodaje, Date horaInicio, Date horaFin, Date horaDesayuno, Date horaAlmuerzo, Date horaAmanecer, Date horaAtardecer, String prevMeteo, int estado) {
         this.id = id;
+        this.pelicula = pelicula;
         this.productor = productor;
         this.director = director;
         this.directorProd = directorProd;
@@ -49,6 +50,14 @@ public class OrdenRodaje {
         this.horaAtardecer = horaAtardecer;
         this.prevMeteo = prevMeteo;
         this.estado = estado;
+    }
+
+    public Pelicula getPelicula() {
+        return pelicula;
+    }
+
+    public void setPelicula(Pelicula pelicula) {
+        this.pelicula = pelicula;
     }
     
     

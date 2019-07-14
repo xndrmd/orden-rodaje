@@ -390,6 +390,18 @@ public class OrdenRodajeFrm extends javax.swing.JFrame {
         // TODO add your handling code here:
         OrdenRodaje or = new OrdenRodaje();
         
+        Pelicula p = new Pelicula();
+        p.setNombre(peliculatxt.getText());
+        or.setPelicula(p);
+        
+        Hospital h = new Hospital();
+        h.setNombre(hnombretxt.getText());
+        h.setDireccion(hdirecciontxt.getText());
+        h.setTelefono(htelefonotxt.getText());
+        or.setHospital(h);
+        
+        
+        
         
     }//GEN-LAST:event_guardarbtnActionPerformed
 
